@@ -3,13 +3,20 @@
   <head>
     <title>Starry Night</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
-    </style>
+    <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="index.css" />
-    <script>
+  </head>
+  <body>
+    <div>
+      <div id="particles-js"></div>
+      <h1>hello world</h1>
+      <h3>nice to meet you!</h3>
+      <h3>my name is</h3>
+      <span class="neon">allie</span>
+      <h3>welcome to my starry site</h3>
+    </div>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script defer>
       particlesJS('particles-js', {
         particles: {
           number: { value: 60, density: { enable: true, value_area: 700 } },
@@ -72,15 +79,5 @@
         retina_detect: true,
       })
     </script>
-  </head>
-  <body>
-    <div>
-      <div id="particles-js"></div>
-      <h1>hello world</h1>
-      <h3>nice to meet you!</h3>
-      <h3>my name is</h3>
-      <span class="neon">allie</span>
-      <h3>welcome to my starry site</h3>
-    </div>
   </body>
 </html>
