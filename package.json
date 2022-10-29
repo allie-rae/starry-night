@@ -1,0 +1,22 @@
+{
+  "name": "starry-night",
+  "version": "1.0.0",
+  "description": "Stars stars everywhere",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allie-rae/starry-night.git"
+  },
+  "author": "Allie Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allie-rae/starry-night/issues"
+  },
+  "homepage": "https://github.com/allie-rae/starry-night#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
