@@ -6,11 +6,7 @@ body {
   margin: 0;
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   text-align: center;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
+  background-color: #262260;
 }
 
 #particles-js {
@@ -24,36 +20,127 @@ canvas {
   background-position: 50% 50%;
 }
 
+.flexbox-centered-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexbox-centered-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-left-aligned-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.timeline {
+  min-width: 500px;
+  max-width: 800px;
+}
+
 h1 {
   color: #ffffa8;
-  position: relative;
   margin-top: 0;
   padding-top: 4rem;
   font-size: 4.5rem;
   margin-bottom: 0.5rem;
 }
 
+h2 {
+  color: #ffffa8;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
 h3 {
   color: #ffffa8;
-  position: relative;
   font-size: 2rem;
   margin-bottom: 0.5rem;
   margin-top: 0;
+  text-align: left;
 }
 
-.neon {
+a {
+  color: #ffffa8;
+}
+
+.allie {
   font-family: Pacifico;
   font-size: 20rem;
   font-weight: lighter;
   text-shadow: 0 0 10px rgba(255, 255, 0, 0.5), 0 0 20px rgba(255, 255, 0, 0.5),
     0 0 30px rgba(255, 255, 0, 0.5), 0 0 40px #ffdd1b, 0 0 70px #ffdd1b,
     0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
-  position: relative;
   color: #ffffa8;
 }
 
+.neon {
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.5), 0 0 20px rgba(255, 255, 0, 0.5),
+    0 0 30px rgba(255, 255, 0, 0.5), 0 0 40px #ffdd1b, 0 0 70px #ffdd1b,
+    0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+  color: #ffffa8;
+}
+
+.point {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 6px solid #ffffa8;
+  box-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 10px rgba(255, 255, 0, 0.5),
+    0 0 10px rgba(255, 255, 0, 0.5), 0 0 20px #ffdd1b, 0 0 50px #ffdd1b,
+    0 0 60px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b;
+}
+
+.point-connector {
+  border-left: 6px solid #ffffa8;
+  height: 50px;
+  margin-top: -1.1rem;
+  margin-bottom: -1.1rem;
+  margin-left: 28px;
+}
+
 @media only screen and (max-width: 768px) {
-  .neon {
+  .allie {
     font-size: 15rem;
+  }
+
+  .timeline {
+    min-width: 90%;
+  }
+
+  .point {
+    border: 6px solid #ffffa8;
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 10px rgba(255, 255, 0, 0.5),
+      0 0 10px rgba(255, 255, 0, 0.5), 0 0 20px #ffdd1b, 0 0 50px #ffdd1b,
+      0 0 60px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .point-connector {
+    display: none;
   }
 }
