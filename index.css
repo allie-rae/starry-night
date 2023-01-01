@@ -107,18 +107,19 @@ a {
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  border: 6px solid #ffffa8;
+  /* border: 6px solid #ffffa8; */
   box-shadow: 0 0 10px rgba(255, 255, 0, 0.5), 0 0 20px rgba(255, 255, 0, 0.5),
     0 0 30px rgba(255, 255, 0, 0.5), 0 0 40px #ffdd1b, 0 0 70px #ffdd1b,
     0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+  background-color: #ffffa8;
 }
 
 .point-connector {
-  border-left: 6px solid #ffffa8;
+  border-left: 2px solid #ffffa8;
   height: 50px;
   margin-top: -1.1rem;
   margin-bottom: -1.1rem;
-  margin-left: 26px;
+  margin-left: 22px;
 }
 
 @media only screen and (max-width: 768px) {
