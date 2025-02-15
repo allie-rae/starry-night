@@ -86,14 +86,36 @@ a {
   color: #ffffa8;
 }
 
+@keyframes yellow-glow-animation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5),
+      0 0 20px rgba(255, 255, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.5),
+      0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b,
+      0 0 150px #ffdd1b;
+  }
+  50% {
+    text-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 10px rgba(255, 255, 0, 0.5),
+      0 0 15px rgba(255, 255, 0, 0.5), 0 0 20px #ffdd1b, 0 0 35px #ffdd1b,
+      0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    color: #ffffc9;
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.5),
+      0 0 20px rgba(255, 255, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.5),
+      0 0 40px #ffdd1b, 0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b,
+      0 0 150px #ffdd1b;
+  }
+}
+
 .allie {
   font-family: Pacifico;
   font-size: 20rem;
   font-weight: lighter;
-  text-shadow: 0 0 10px rgba(255, 255, 0, 0.5), 0 0 20px rgba(255, 255, 0, 0.5),
-    0 0 30px rgba(255, 255, 0, 0.5), 0 0 40px #ffdd1b, 0 0 70px #ffdd1b,
-    0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
   color: #ffffa8;
+  animation-name: yellow-glow-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .neon {
